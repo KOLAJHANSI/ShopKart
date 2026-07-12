@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopKart - Your Shopping Destination</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6b4b9e9d7f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+
+        <div class="logo">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <h2>ShopKart</h2>
+
+        </div>
+
+        <div class="search-box">
+
+            <input type="text" id="search" placeholder="Search products...">
+
+            <button>
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="orders.html">Orders</a>
+
+            <a href="login.html">Login</a>
+
+            <a href="register.html">Register</a>
+
+            <a href="cart.html">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Cart
+
+            </a>
+
+        </div>
+
+    </nav>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>
+
+                Shop Smarter,
+
+                <span>Live Better.</span>
+
+            </h1>
+
+            <p>
+
+                Discover the latest gadgets,
+
+                fashion, accessories and much
+
+                more at amazing prices.
+
+            </p>
+
+            <button onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
+                Explore Products
+            </button>
+
+        </div>
+
+        <div class="hero-image">
+            <img id="hero-slider" src="images/iphone.jpg" alt="Hero Image">
+        </div>
+
+    </section>
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section class="categories">
+
+        <h2>
+
+            Shop By Category
+
+        </h2>
+
+        <div class="category-container">
+
+            <div class="category-card">
+
+                <img src="images/1.png" alt="">
+
+                <p>Mobiles</p>
+
+            </div>
+
+            <div class="category-card">
+
+                <img src="images/2.png" alt="">
+
+                <p>Laptops</p>
+
+            </div>
+
+            <div class="category-card">
+
+                <img src="images/3.png" alt="">
+
+                <p>Fashion</p>
+
+            </div>
+
+            <div class="category-card">
+
+                <img src="images/4.png" alt="">
+
+                <p>Watches</p>
+
+            </div>
+
+            <div class="category-card">
+
+                <img src="images/5.png" alt="">
+
+                <p>Electronics</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <section class="products" id="products">
+
+        <h2>
+
+            Featured Products
+
+        </h2>
+
+        <div id="product-container">
+
+            <!-- JavaScript will display products here -->
+
+        </div>
+
+    </section>
+
+    <!-- ================= WHY SHOPKART ================= -->
+
+    <section class="features">
+
+        <div class="feature">
+
+            🚚
+
+            <h3>
+
+                Fast Delivery
+
+            </h3>
+
+            <p>
+
+                Delivered within 2-3 business days.
+
+            </p>
+
+        </div>
+
+        <div class="feature">
+
+            🔒
+
+            <h3>
+
+                Secure Shopping
+
+            </h3>
+
+            <p>
+
+                Safe and encrypted transactions.
+
+            </p>
+
+        </div>
+
+        <div class="feature">
+
+            💳
+
+            <h3>
+
+                Easy Payments
+
+            </h3>
+
+            <p>
+
+                Multiple payment options available.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h2>
+
+            ShopKart
+
+        </h2>
+
+        <p>
+
+            Building modern shopping experiences using
+
+            HTML, CSS, JavaScript & FastAPI.
+
+        </p>
+
+        <p>
+
+            © 2026 ShopKart. All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+    <script src="js/product.js"></script>
+
+
+</body>
+
+</html>
