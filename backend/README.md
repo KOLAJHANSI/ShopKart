@@ -116,7 +116,7 @@ uvicorn main:app --reload
 7. Open Swagger Documentation
 
 ```
-http://127.0.0.1:8000/docs
+https://shopkart-b9ei.onrender.com
 ```
 
 ---
