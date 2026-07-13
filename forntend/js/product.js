@@ -15,7 +15,7 @@ async function loadProducts() {
 
     try {
 
-        const response = await fetch("http://127.0.0.1:8000/products/");
+        const response = await fetch("https://shopkart-b9ei.onrender.com/products/");
 
         if (!response.ok) {
             throw new Error("Failed to load products");
@@ -191,7 +191,7 @@ async function addToCart(id, event) {
 
     try {
 
-        const response = await fetch("http://127.0.0.1:8000/cart/", {
+        const response = await fetch("https://shopkart-b9ei.onrender.com/cart/", {
 
             method: "POST",
 

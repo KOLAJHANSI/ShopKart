@@ -16,11 +16,11 @@ async function loadOrders() {
     try {
 
         // Load products
-        const productResponse = await fetch("http://127.0.0.1:8000/products/");
+        const productResponse = await fetch("https://shopkart-b9ei.onrender.com/products/");
         products = await productResponse.json();
 
         // Load orders
-        const orderResponse = await fetch("http://127.0.0.1:8000/orders/", {
+        const orderResponse = await fetch("https://shopkart-b9ei.onrender.com/orders/", {
 
             headers: {
                 Authorization: `Bearer ${token}`

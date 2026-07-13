@@ -14,7 +14,7 @@ loginForm.addEventListener("submit", async function (e) {
 
     try {
 
-        const response = await fetch("http://127.0.0.1:8000/auth/login", {
+        const response = await fetch("https://shopkart-b9ei.onrender.com/auth/login", {
 
             method: "POST",
 

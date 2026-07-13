@@ -14,10 +14,10 @@ async function loadCart() {
 
     try {
 
-        const productResponse = await fetch("http://127.0.0.1:8000/products/");
+        const productResponse = await fetch("https://shopkart-b9ei.onrender.com/products/");
         products = await productResponse.json();
 
-        const cartResponse = await fetch("http://127.0.0.1:8000/cart/", {
+        const cartResponse = await fetch("https://shopkart-b9ei.onrender.com/cart/", {
             headers: {
                 Authorization: `Bearer ${token}`
             }
@@ -110,7 +110,7 @@ function displayCart() {
 
 async function removeItem(id) {
 
-    await fetch(`http://127.0.0.1:8000/cart/${id}`, {
+    await fetch(`https://shopkart-b9ei.onrender.com/cart/${id}`, {
 
         method: "DELETE",
 
@@ -134,7 +134,7 @@ async function placeOrder() {
 
         for (const item of cartItems) {
 
-            await fetch("http://127.0.0.1:8000/orders/", {
+            await fetch("https://shopkart-b9ei.onrender.com/orders/", {
 
                 method: "POST",
 
